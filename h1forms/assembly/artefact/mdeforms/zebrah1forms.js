@@ -244,10 +244,12 @@ function mykeyboardKeypress(key){
     	
 		if (key == '<<' && text.length > 0) {
 			inp.value = text.substring(0, text.length - 1);
+		} else if (key == '<<') {
+			inp.value = '';
 		} else if (key == '+') {
-			inp.value = (parseFloat(text) + 1).toString();
+			inp.value = (parseFloat(text) + 1).toFixed().toString();
 		} else if (key == '-') {
-			inp.value = (parseFloat(text) - 1).toString();
+			inp.value = (parseFloat(text) - 1).toFixed().toString();
 		} else {
 			if (mykeyboardFirstKeyAfterFocus) {
     			text = '';
