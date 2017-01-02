@@ -5431,6 +5431,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="29qU1V3qQ_l" role="3cqZAp" />
+        <node concept="3clFbF" id="29qU1V3qXia" role="3cqZAp">
+          <node concept="2OqwBi" id="29qU1V3qXm_" role="3clFbG">
+            <node concept="37vLTw" id="29qU1V3qXi8" role="2Oq$k0">
+              <ref role="3cqZAo" node="6qxhjMM9ESu" resolve="mainBorder" />
+            </node>
+            <node concept="liA8E" id="29qU1V3qXJi" role="2OqNvi">
+              <ref role="37wK5l" node="3zf0S8jPnRN" resolve="addLeftText" />
+              <node concept="37vLTw" id="29qU1V3qXOn" role="37wK5m">
+                <ref role="3cqZAo" node="20ohnkbIQSI" resolve="info" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="78E3KqmQ3cA" role="3cqZAp">
           <node concept="3cpWsn" id="78E3KqmQ3cB" role="3cpWs9">
             <property role="TrG5h" value="p" />
@@ -35740,7 +35754,7 @@
         <node concept="3clFbF" id="78E3KqmRRNZ" role="3cqZAp">
           <node concept="37vLTI" id="78E3KqmRRO1" role="3clFbG">
             <node concept="3cmrfG" id="248r5L2AXbR" role="37vLTx">
-              <property role="3cmrfH" value="400" />
+              <property role="3cmrfH" value="600" />
             </node>
             <node concept="37vLTw" id="78E3KqmRSOi" role="37vLTJ">
               <ref role="3cqZAo" node="78E3KqmRS1U" resolve="width" />
@@ -35762,7 +35776,7 @@
           </node>
           <node concept="3eOVzh" id="248r5L2AYum" role="3clFbw">
             <node concept="3cmrfG" id="248r5L2AYwV" role="3uHU7w">
-              <property role="3cmrfH" value="400" />
+              <property role="3cmrfH" value="600" />
             </node>
             <node concept="37vLTw" id="248r5L2AY9v" role="3uHU7B">
               <ref role="3cqZAo" node="248r5L2AJ0Y" resolve="parentWidth" />
@@ -35771,11 +35785,11 @@
         </node>
         <node concept="3clFbF" id="78E3KqmRT38" role="3cqZAp">
           <node concept="37vLTI" id="78E3KqmRT3a" role="3clFbG">
-            <node concept="3cmrfG" id="248r5L2AZRE" role="37vLTx">
-              <property role="3cmrfH" value="45" />
-            </node>
             <node concept="37vLTw" id="78E3KqmRTlm" role="37vLTJ">
               <ref role="3cqZAo" node="78E3KqmRSpv" resolve="height" />
+            </node>
+            <node concept="3cmrfG" id="29qU1V3rHgr" role="37vLTx">
+              <property role="3cmrfH" value="50" />
             </node>
           </node>
         </node>
@@ -35966,8 +35980,8 @@
             </node>
             <node concept="liA8E" id="78E3KqmURhi" role="2OqNvi">
               <ref role="37wK5l" to="rb41:~Labeled.setTextAlignment(javafx.scene.text.TextAlignment):void" resolve="setTextAlignment" />
-              <node concept="Rm8GO" id="78E3KqmV0de" role="37wK5m">
-                <ref role="Rm8GQ" to="f1mx:~TextAlignment.CENTER" resolve="CENTER" />
+              <node concept="Rm8GO" id="29qU1V3suse" role="37wK5m">
+                <ref role="Rm8GQ" to="f1mx:~TextAlignment.JUSTIFY" resolve="JUSTIFY" />
                 <ref role="1Px2BO" to="f1mx:~TextAlignment" resolve="TextAlignment" />
               </node>
             </node>

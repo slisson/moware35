@@ -10904,12 +10904,16 @@
     <node concept="3clFbS" id="43H1fr7wQNi" role="18ibNy">
       <node concept="3clFbJ" id="43H1fr7FRtT" role="3cqZAp">
         <node concept="3clFbS" id="43H1fr7FRtV" role="3clFbx">
-          <node concept="a7r0C" id="43H1fr7FSrI" role="3cqZAp">
-            <node concept="Xl_RD" id="43H1fr7FSyo" role="a7wSD">
-              <property role="Xl_RC" value="Typically, a multi string instance is used here (e.g. 'Invoice %d created' % invoice.id)." />
-            </node>
-            <node concept="1YBJjd" id="43H1fr7FSEm" role="2OEOjV">
-              <ref role="1YBMHb" node="43H1fr7wQNk" resolve="commandCreationInfo" />
+          <node concept="1X3_iC" id="29qU1V3gW_x" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="a7r0C" id="43H1fr7FSrI" role="8Wnug">
+              <node concept="Xl_RD" id="43H1fr7FSyo" role="a7wSD">
+                <property role="Xl_RC" value="Typically, a multi string instance is used here (e.g. 'Invoice %d created' % invoice.id)." />
+              </node>
+              <node concept="1YBJjd" id="43H1fr7FSEm" role="2OEOjV">
+                <ref role="1YBMHb" node="43H1fr7wQNk" resolve="commandCreationInfo" />
+              </node>
             </node>
           </node>
         </node>
