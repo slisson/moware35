@@ -4666,15 +4666,35 @@
             <ref role="37wK5l" to="ahg6:~Application.stop():void" resolve="stop" />
           </node>
         </node>
-        <node concept="3clFbF" id="20ohnkbyBKq" role="3cqZAp">
-          <node concept="2OqwBi" id="20ohnkbyBSF" role="3clFbG">
-            <node concept="37vLTw" id="20ohnkbyBKo" role="2Oq$k0">
-              <ref role="3cqZAo" node="6qxhjMM9ESu" resolve="mainBorder" />
+        <node concept="3clFbJ" id="1v38AONRXAy" role="3cqZAp">
+          <node concept="3clFbS" id="1v38AONRXA$" role="3clFbx">
+            <node concept="3SKdUt" id="1v38AONS8ue" role="3cqZAp">
+              <node concept="3SKdUq" id="1v38AONS8ug" role="3SKWNk">
+                <property role="3SKdUp" value="should not save fx when iconified in taskbar. bug" />
+              </node>
             </node>
-            <node concept="liA8E" id="20ohnkbyCat" role="2OqNvi">
-              <ref role="37wK5l" node="2WNQGzSHNkZ" resolve="savePosition" />
-              <node concept="37vLTw" id="20ohnkbyCdB" role="37wK5m">
+            <node concept="3clFbF" id="20ohnkbyBKq" role="3cqZAp">
+              <node concept="2OqwBi" id="20ohnkbyBSF" role="3clFbG">
+                <node concept="37vLTw" id="20ohnkbyBKo" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6qxhjMM9ESu" resolve="mainBorder" />
+                </node>
+                <node concept="liA8E" id="20ohnkbyCat" role="2OqNvi">
+                  <ref role="37wK5l" node="2WNQGzSHNkZ" resolve="savePosition" />
+                  <node concept="37vLTw" id="20ohnkbyCdB" role="37wK5m">
+                    <ref role="3cqZAo" node="6qxhjMMa$Eg" resolve="mainStage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1v38AONRXAz" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="1v38AONRXEV" role="3clFbw">
+            <node concept="2OqwBi" id="1v38AONRXV6" role="3fr31v">
+              <node concept="37vLTw" id="1v38AONRXL3" role="2Oq$k0">
                 <ref role="3cqZAo" node="6qxhjMMa$Eg" resolve="mainStage" />
+              </node>
+              <node concept="liA8E" id="1v38AONRXYS" role="2OqNvi">
+                <ref role="37wK5l" to="zsw4:~Stage.isIconified():boolean" resolve="isIconified" />
               </node>
             </node>
           </node>
@@ -5183,7 +5203,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1EBV9L$$nwi" role="3cqZAp" />
+        <node concept="3clFbH" id="1v38AONQICT" role="3cqZAp" />
         <node concept="3SKdUt" id="1EBV9L$$o_0" role="3cqZAp">
           <node concept="3SKdUq" id="1EBV9L$$oMh" role="3SKWNk">
             <property role="3SKdUp" value="then remove jmx things. " />

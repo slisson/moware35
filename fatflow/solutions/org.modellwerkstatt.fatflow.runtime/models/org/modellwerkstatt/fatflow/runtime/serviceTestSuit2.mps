@@ -54,6 +54,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -165,9 +166,12 @@
         <child id="7192042020164640432" name="variable" index="3ulXEG" />
       </concept>
       <concept id="7192042020165155288" name="org.modellwerkstatt.objectflow.structure.ContainerVariableReference" flags="ng" index="3urNR4" />
-      <concept id="6952410984685067935" name="org.modellwerkstatt.objectflow.structure.OFXTestMethod" flags="ng" index="3yPF9F" />
-      <concept id="59360650278516068" name="org.modellwerkstatt.objectflow.structure.IOFXTestSuitContent" flags="ng" index="1DF_5m" />
-      <concept id="59360650273300411" name="org.modellwerkstatt.objectflow.structure.IOFXTestSuitIncludeSuit" flags="ng" index="1DZZI9">
+      <concept id="6952410984688491110" name="org.modellwerkstatt.objectflow.structure.OFXTestMethodCall" flags="ng" index="3yABqi" />
+      <concept id="6952410984685067935" name="org.modellwerkstatt.objectflow.structure.OFXTestMethod" flags="ng" index="3yPF9F">
+        <child id="6952410984686914562" name="dependentMethods" index="3yGA3Q" />
+      </concept>
+      <concept id="59360650273300411" name="org.modellwerkstatt.objectflow.structure.OFXTestSuitIncludeSuit" flags="ng" index="1DZZI9">
+        <property id="1712250135803971521" name="execute" index="wXImG" />
         <reference id="59360650273300414" name="testsuit" index="1DZZIc" />
       </concept>
     </language>
@@ -996,21 +1000,53 @@
     <property role="TrG5h" value="Test All All All" />
     <ref role="2WPtWl" node="5MCXLSo4_z9" resolve="MPreisOFXLdapConfig" />
     <node concept="1DZZI9" id="4Ta2XmW4r9g" role="38MLOi">
+      <property role="wXImG" value="true" />
       <ref role="1DZZIc" to="goi:1oH_MJfbPWk" resolve="ALL ALL ManMap Testsuits" />
     </node>
     <node concept="1DZZI9" id="4Ta2XmW47D2" role="38MLOi">
+      <property role="wXImG" value="true" />
       <ref role="1DZZIc" to="492s:5MCXLSnMi3q" resolve="Test Commands" />
     </node>
     <node concept="1DZZI9" id="4Ta2XmW47D$" role="38MLOi">
+      <property role="wXImG" value="true" />
       <ref role="1DZZIc" to="492s:7pudXbEJVMv" resolve="Test Wizzard" />
     </node>
     <node concept="1DZZI9" id="4v9zWuRDqVu" role="38MLOi">
+      <property role="wXImG" value="true" />
       <ref role="1DZZIc" to="492s:5zF9hZsDuXt" resolve="Test Service" />
     </node>
-    <node concept="1DZZI9" id="3yttyAVkN9A" role="38MLOi">
-      <ref role="1DZZIc" node="7$uuZ_GXf0k" resolve="Tests L d a p" />
+    <node concept="3yPF9F" id="1v38AOOoheA" role="3yMuLx">
+      <property role="TrG5h" value="MyTest 1" />
+      <node concept="37vLTG" id="1v38AOOohhc" role="3clF46">
+        <property role="TrG5h" value="i" />
+        <node concept="10Oyi0" id="1v38AOOohhi" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="1v38AOOohpx" role="3clF45" />
+      <node concept="3clFbS" id="1v38AOOoheE" role="3clF47" />
     </node>
-    <node concept="1DF_5m" id="4Ta2XmW47C7" role="3yMuLx" />
+    <node concept="3yPF9F" id="1v38AOOohiv" role="3yMuLx">
+      <property role="TrG5h" value="MyTest 2" />
+      <node concept="37vLTG" id="1v38AOOohiw" role="3clF46">
+        <property role="TrG5h" value="i" />
+        <node concept="10Oyi0" id="1v38AOOohix" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="1v38AOOohiy" role="3clF45" />
+      <node concept="3clFbS" id="1v38AOOohiz" role="3clF47" />
+      <node concept="3yABqi" id="1v38AOOohk4" role="3yGA3Q">
+        <property role="TrG5h" value="W" />
+        <ref role="37wK5l" node="1v38AOOoheA" resolve="MyTest 1" />
+        <node concept="3cmrfG" id="1v38AOOohkp" role="37wK5m">
+          <property role="3cmrfH" value="1" />
+        </node>
+      </node>
+      <node concept="3yABqi" id="1v38AOOohkN" role="3yGA3Q">
+        <property role="TrG5h" value="W" />
+        <ref role="37wK5l" node="1v38AOOoheA" resolve="MyTest 1" />
+        <node concept="3cmrfG" id="1v38AOOohkO" role="37wK5m">
+          <property role="3cmrfH" value="1" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

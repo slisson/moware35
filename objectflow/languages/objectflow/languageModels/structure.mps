@@ -2951,12 +2951,6 @@
       <property role="20kJfa" value="dependentMethods" />
       <ref role="20lvS9" node="61VVfi2SpDA" resolve="OFXTestMethodCall" />
     </node>
-    <node concept="1TJgyj" id="7ECLRBgnowH" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="0..n" />
-      <property role="20kJfa" value="finallyMethods" />
-      <ref role="20lvS9" node="61VVfi2SpDA" resolve="OFXTestMethodCall" />
-    </node>
     <node concept="PrWs8" id="3n7eUMgpGRH" role="PzmwI">
       <ref role="PrY4T" node="6xpSWdTCm5i" resolve="ICanRunCommands" />
     </node>
@@ -3009,8 +3003,8 @@
     <property role="1pbfSe" value="144796260" />
     <property role="3GE5qa" value="OFXTest.statements" />
     <property role="TrG5h" value="OFXTestPrintStatement" />
-    <property role="34LRSv" value="print" />
-    <property role="R4oN_" value="debug message" />
+    <property role="34LRSv" value="logDbg" />
+    <property role="R4oN_" value="test debug message" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="2w93nZwA5NA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -3061,10 +3055,14 @@
   <node concept="1TIwiD" id="3iT39DbhYV">
     <property role="1pbfSe" value="1778385901" />
     <property role="3GE5qa" value="OFXTest.options" />
-    <property role="TrG5h" value="IOFXTestSuitIncludeSuit" />
+    <property role="TrG5h" value="OFXTestSuitIncludeSuit" />
     <property role="34LRSv" value="INCLUDE_SUIT" />
-    <property role="R4oN_" value="queue onstartup/shutdown and run" />
+    <property role="R4oN_" value="queue onstartup/shutdown" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1v38AORdsv1" role="1TKVEl">
+      <property role="TrG5h" value="execute" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="3iT39DbhYY" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="testsuit" />
@@ -3343,6 +3341,7 @@
     <property role="3GE5qa" value="OFXTest.options" />
     <property role="TrG5h" value="OFXTestPathOption" />
     <property role="34LRSv" value="PATH" />
+    <property role="R4oN_" value="define a directory" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7mZ5ilqH2PU" role="1TKVEl">
       <property role="TrG5h" value="fullFSPathName" />

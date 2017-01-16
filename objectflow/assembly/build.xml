@@ -27,14 +27,14 @@
   <property name="appConfiguration"     value="org/modellwerkstatt/fatflow/runtime/BatchJobTestSuit/LolaTestConfigTomcat.xml" /> 
   
   <!-- **** build specific definitions ************************************************************** -->
-  <property name="javawareHomeDir"       value="/Users/danielstieger/javaware" /> 
-  <property name="mpsHomeDir"            value="/Users/danielstieger/javaexe/MPS323" /> 
-  <property name="mowarePluginHomeDir"   value="/Users/danielstieger/javaexe/MoPluginFake" />
+  <property name="javawareHomeDir"       value="C:/javaware" /> 
+  <property name="mpsHomeDir"            value="C:/javaexe/MPS335" /> 
+  <property name="mowarePluginHomeDir"   value="C:/javaexe/MoPluginFake" />
   <property name="tomcatHomeDir"         value="/Users/danielstieger/stuff/apache-tomcat-8.0.33" />
       
   <!-- **** solutions to incorporate in this build ************************************************** -->
   <!-- coincidently the class_gen is in moware -->
-  <property name="solultionSimpleGen"   value="/Users/danielstieger/moware/fatflow/solutions/org.modellwerkstatt.fatflow.runtime/classes_gen" />
+  <property name="solultionSimpleGen"   value="C:/moware/fatflow/solutions/org.modellwerkstatt.fatflow.runtime/classes_gen" />
 
 
 
@@ -49,7 +49,7 @@
 
   <!-- ++++++++++++ Live moware plugin adoption +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->   
   <target name="mowarePluginAdoption">
-	<property name="mowareHome"    value="/Users/danielstieger/moware" />
+	<property name="mowareHome"    value="c:/moware" />
     <delete includeemptydirs="false">
     	<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions" includes="*.jar"/>
   	</delete>
