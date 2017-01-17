@@ -10622,10 +10622,6 @@
     <property role="3GE5qa" value="OFXCore.command" />
     <ref role="1XX52x" to="un0u:4Ta2XmWaDfo" resolve="ErrorInCommand" />
     <node concept="3EZMnI" id="4Ta2XmWaDfz" role="2wV5jI">
-      <node concept="3F0ifn" id="4Ta2XmWA7Rm" role="3EZMnx">
-        <property role="3F0ifm" value="// do we need a &lt;shutdown&gt; or &lt;skip&gt;, &lt;retry&gt; in jobs?" />
-        <ref role="1k5W1q" node="3g5RX4qMHze" resolve="O2Hint" />
-      </node>
       <node concept="PMmxH" id="4Ta2XmWaDf$" role="3EZMnx">
         <property role="1cu_pB" value="0" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
