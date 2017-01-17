@@ -345,10 +345,6 @@
       <concept id="4533072425307800381" name="org.modellwerkstatt.objectflow.structure.StatusType" flags="ig" index="2XvVpB">
         <reference id="6600213247848012755" name="status" index="3$lB4D" />
       </concept>
-      <concept id="1881524139085549729" name="org.modellwerkstatt.objectflow.structure.FlagCommand" flags="ng" index="10Adit">
-        <child id="1881524139085549730" name="msgExpression" index="10Adiu" />
-        <child id="1881524139085549731" name="conditionExpression" index="10Adiv" />
-      </concept>
       <concept id="6362637745398048173" name="org.modellwerkstatt.objectflow.structure.VariantStatements" flags="ng" index="30JsjW">
         <child id="6362637745398048174" name="statements" index="30JsjZ" />
         <child id="3140039561983768159" name="characteristics" index="1V99W7" />
@@ -393,9 +389,6 @@
         <property id="569389511234497411" name="fromServer" index="1$4sGX" />
         <property id="569389511234497408" name="year" index="1$4sGY" />
         <property id="569389511234497409" name="month" index="1$4sGZ" />
-      </concept>
-      <concept id="5641334495847814104" name="org.modellwerkstatt.objectflow.structure.ErrorInCommand" flags="ng" index="3Mo9wd">
-        <child id="5641334495847814106" name="exception" index="3Mo9wf" />
       </concept>
       <concept id="3292003893123123200" name="org.modellwerkstatt.objectflow.structure.IsNull" flags="ng" index="1Poggp" />
       <concept id="3140039561983767668" name="org.modellwerkstatt.objectflow.structure.VariantCharacteristic" flags="ng" index="1V99OG">
@@ -915,7 +908,7 @@
       <property role="TrG5h" value="MapIntKeyObject" />
       <ref role="12nOxz" node="66mO_QBe4P4" resolve="IntKeyObject" />
       <node concept="Xl_RD" id="66mO_QBe4QQ" role="12gAQd">
-        <property role="Xl_RC" value="kassabuchdaten.TESTOBJECT_TABLE" />
+        <property role="Xl_RC" value="TESTOBJECT_TABLE" />
       </node>
       <node concept="jyGaT" id="66mO_QBe4QR" role="jyGaQ" />
       <node concept="12nEzJ" id="66mO_QBe4Rf" role="3caO6$">
@@ -931,7 +924,7 @@
         </node>
         <node concept="jyRCY" id="66mO_QBe4Rj" role="jzqmW">
           <node concept="Xl_RD" id="66mO_QBe4Rk" role="jyRCS">
-            <property role="Xl_RC" value="kassabuchdaten.S_TESTOBJECT" />
+            <property role="Xl_RC" value="S_TESTOBJECT" />
           </node>
         </node>
       </node>
@@ -2450,79 +2443,8 @@
       <property role="TrG5h" value="checkinIntKeyObject" />
       <node concept="3Tm1VV" id="66mO_QB97rK" role="1B3o_S" />
       <node concept="3clFbS" id="66mO_QB97rL" role="3clF47">
-        <node concept="1X3_iC" id="1v38AOOohMX" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="1v38AONSxKJ" role="8Wnug">
-            <node concept="2OqwBi" id="1v38AONSxKG" role="3clFbG">
-              <node concept="10M0yZ" id="1v38AONSxKH" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-              </node>
-              <node concept="liA8E" id="1v38AONSxKI" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="3cpWs3" id="1v38AONSxVr" role="37wK5m">
-                  <node concept="37vLTw" id="1v38AONSxY5" role="3uHU7w">
-                    <ref role="3cqZAo" node="66mO_QB97rN" resolve="to" />
-                  </node>
-                  <node concept="Xl_RD" id="1v38AONSxMu" role="3uHU7B">
-                    <property role="Xl_RC" value="Saving to DB " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="1v38AONSxZ9" role="3cqZAp" />
-        <node concept="1X3_iC" id="1v38AOPpDBS" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbJ" id="1v38AOPmisf" role="8Wnug">
-            <node concept="3clFbS" id="1v38AOPmish" role="3clFbx">
-              <node concept="YS8fn" id="1v38AOPmiJj" role="3cqZAp">
-                <node concept="2ShNRf" id="1v38AOPmiKB" role="YScLw">
-                  <node concept="1pGfFk" id="1v38AOPmj3R" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                    <node concept="Xl_RD" id="1v38AOPmj5s" role="37wK5m">
-                      <property role="Xl_RC" value="Exception thrown on purpose." />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3eOVzh" id="1v38AOPmiCX" role="3clFbw">
-              <node concept="3cmrfG" id="1v38AOPmiuD" role="3uHU7B">
-                <property role="3cmrfH" value="1" />
-              </node>
-              <node concept="3cmrfG" id="1v38AOPmizM" role="3uHU7w">
-                <property role="3cmrfH" value="10" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="1v38AOQ64_x" role="3cqZAp" />
-        <node concept="3Mo9wd" id="1v38AOPVkaU" role="3cqZAp">
-          <node concept="Xl_RD" id="1v38AOPVkcs" role="10Adiu">
-            <property role="Xl_RC" value="Houston we have a problem" />
-          </node>
-          <node concept="2ShNRf" id="1v38AOPVkgQ" role="3Mo9wf">
-            <node concept="1pGfFk" id="1v38AOPVkyF" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-              <node concept="Xl_RD" id="1v38AOPVk$g" role="37wK5m">
-                <property role="Xl_RC" value="This can not happen" />
-              </node>
-            </node>
-          </node>
-          <node concept="3eOVzh" id="1v38AOPVkJT" role="10Adiv">
-            <node concept="3cmrfG" id="1v38AOPVkL4" role="3uHU7w">
-              <property role="3cmrfH" value="10" />
-            </node>
-            <node concept="3cmrfG" id="1v38AOPVkFw" role="3uHU7B">
-              <property role="3cmrfH" value="1" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1v38AOPVkP4" role="3cqZAp" />
         <node concept="3clFbJ" id="5r27HhJNduT" role="3cqZAp">
           <node concept="3clFbS" id="5r27HhJNduW" role="3clFbx">
             <node concept="P1rGi" id="66mO_QBeg1C" role="3cqZAp">
@@ -2532,6 +2454,7 @@
               </node>
               <node concept="2Mszgd" id="61uiP9mxTNe" role="2HVurX" />
             </node>
+            <node concept="3clFbH" id="3DfsTh8m4Lt" role="3cqZAp" />
           </node>
           <node concept="3clFbC" id="5r27HhJNdyc" role="3clFbw">
             <node concept="10Nm6u" id="5r27HhJNdzC" role="3uHU7w" />
@@ -2539,6 +2462,7 @@
           </node>
           <node concept="9aQIb" id="5r27HhJNd_1" role="9aQIa">
             <node concept="3clFbS" id="5r27HhJNd_2" role="9aQI4">
+              <node concept="3clFbH" id="3DfsTh8m4Ly" role="3cqZAp" />
               <node concept="P1rGi" id="5r27HhJNd_E" role="3cqZAp">
                 <ref role="P14SV" node="66mO_QBe4QP" resolve="MapIntKeyObject" />
                 <node concept="37vLTw" id="5r27HhJNd_F" role="P1rGp">
